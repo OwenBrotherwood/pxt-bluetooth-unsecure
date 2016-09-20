@@ -1,0 +1,32 @@
+{
+    "name": "bluetooth-insecure",
+    "version": "0.0.0",
+    "description": "",
+    "license": "MIT",
+    "dependencies": {
+        "microbit": "*"
+    },
+    "files": [
+        "README.md",
+        "main.cpp",
+        "extension.cpp",
+        "extension.ts",
+        "shims.d.ts",
+        "enums.d.ts"
+    ],
+    "testFiles": [
+        "tests.ts"
+    ],
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "enabled": 1,
+                    "open": 1
+                }
+            }
+        },
+        "ignoreConflicts": true
+    },
+    "public": true
+}
